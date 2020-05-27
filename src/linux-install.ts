@@ -76,7 +76,7 @@ async function setupKeys() {
   await exec(`gpg --import "${path}"`);
   core.debug("Refreshing keys");
   await exec(
-    "gpg --keyserver hkp://pool.sks-keyservers.net --refresh-keys Swift"
+    "gpg --keyserver ha.pool.sks-keyservers.net --refresh-keys Swift"
   );
 }
 
